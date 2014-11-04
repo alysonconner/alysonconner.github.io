@@ -1,0 +1,19 @@
+# TEAM
+
+Designer & Developer: Alyson Conner
+Site: http://alysonconner.ca
+Email: info@alysonconner.ca
+Location: Ottawa, Canada
+
+---
+
+# THANKS
+
+
+---
+
+# TECHNOLOGY
+
+- Sublime Text
+- Github
+- Hover.com
