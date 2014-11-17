@@ -32,6 +32,8 @@
 	<meta name="twitter:image2" content="">
 	<meta name="twitter:image3" content="">
 </head>
+
+
 <body>
 
 <header id="top">
@@ -49,6 +51,15 @@
 		</nav>
 	</header>
 
+
+<a href="" class="menuIcon">☰</a>
+<ul class="nav">
+  <a href=""><li class="selected">Home</li></a>
+  <a href=""><li>About</li></a>
+  <a href=""><li>Blog</li></a>
+  <a href=""><li>Shop</li></a>
+  <a href=""><li>Contact</li></a>
+</ul>
 
 <section id="content1" class="content1">
 <h3>Portfolio</h3>
@@ -74,6 +85,39 @@
 		</nav>
 	</footer>
 </section>
+
+
+	<footer class="bottom baseline">
+		<a href="#top" class="returntotop">Return to Top</a>
+		<nav class="nav-bottom">
+			<ul id="bottom-menu">
+				<li><a href="#content2">Home</a></li>
+				<li><a href="#content3">Services</a></li>
+				<li><a href="#content4">Barbers</a></li>
+				<li><a href="#content5">Location</a></li>
+				<li><a href="#content6">Contact</a></li>
+			</ul>
+		</nav>
+
+	</footer>
+
+	<a href="index.html"><img src="images/backtotop.svg" alt="back to top" class="backtotop">
+
+	<script src="js/hairfellas.js"></script>
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.6.2/jquery.min.js"></script>
+	<script src="flexslider/jquery.flexslider.js"></script>
+	<script type="text/javascript" charset="utf-8">
+
+
+  $(window).load(function() {
+    $('.flexslider').flexslider({
+		slideshowSpeed:2000,
+		pauseOnHover: true,
+		});
+  });
+	</script>
+	<script src="js/active.js"></script>
+	</a>
 
 </body>
 </html>

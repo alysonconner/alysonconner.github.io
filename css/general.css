@@ -99,3 +99,83 @@ h2 {
 		display: inline;
 	}
 }
+
+body {
+  margin: 0;
+  padding: 0;
+}
+
+.menuIcon {
+  background: #27bdb8;
+  display: block;
+  font-family: "Raleway";
+  color: #fff;
+  text-decoration: none;
+  padding: .75em;
+  font-size: 1.5em;
+  text-align: right;
+}
+
+.nav {
+  background: #27bdb8;
+  margin: 0;
+  padding: 0;
+  text-align: center;
+  display: none;
+}
+
+.nav li {
+  font-family: "Raleway";
+  font-weight: 700;
+  list-style: none;
+  color: white;
+  letter-spacing: .1em;
+  padding: 1em;
+}
+
+.nav a {
+  text-decoration: none;
+}
+
+.selected {
+  background: #06919a;
+}
+
+.list {
+  display: block;
+}
+
+@media screen and (min-width: 480px) {
+
+  .nav {
+    font-size: 0;
+    background: #27bdb8;
+    padding: 0;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    text-align: center;
+    display: block;
+  }
+
+  .nav li {
+    font-family: "Raleway";
+    font-weight: 700;
+    color: #fff;
+    list-style: none;
+    display: inline-block;
+    font-size: 1rem;
+    letter-spacing: .1em;
+    padding: 1em;
+  }
+
+  .selected {
+    background: #06919a;
+  }
+
+  .menuIcon {
+    display: none;
+  }
+
+}
