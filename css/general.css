@@ -30,8 +30,10 @@ footer {
 header{
     width: 100%;
     height: 90px;
-    background: #ffffff;
+    background: rgba(255,255,255,.8);
+    top:0;
     position: relative;
+    position: fixed;
 }
 
 header .logo{
@@ -48,6 +50,7 @@ header nav ul li{
     list-style: none;
     float: left;
     margin-left: 45px;
+    margin-right: 45px;
 }
 
 header nav ul li a{
@@ -92,6 +95,7 @@ section {
 .top-section {
 	background: transparent url("../img/banner.jpg") no-repeat center top;
 	background-size: cover;
+	padding: 20rem;
 }
 
 .about-section {
