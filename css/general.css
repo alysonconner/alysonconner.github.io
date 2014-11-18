@@ -11,6 +11,7 @@ html {
     -ms-text-size-adjust: 100%;
     -webkit-text-size-adjust: 100%;
     text-size-adjust: 100%;
+    font-family: 'Open Sans', sans-serif;
 }
 
 *, *:before, *:after {
@@ -25,77 +26,101 @@ footer {
 	text-align: center;
 }
 
-ul#top {
-	display: inline;
+/*  header  */
+header{
+    width: 100%;
+    height: 90px;
+    background: #ffffff;
+    position: relative;
 }
 
-nav {
-	text-transform: uppercase;
-	display: block;
+header .logo{
+    margin-top: 30px;
+    float: left;
+}
+
+header nav{
+    float: right;
+    margin-top: 30px;
+}
+
+header nav ul li{
+    list-style: none;
+    float: left;
+    margin-left: 45px;
+}
+
+header nav ul li a{
+    text-decoration: none;
+    color: black;
+    font-family: "Open Sans", sans-serif;
+    font-size: 14px;
+    letter-spacing: .5px;
+
+    transition:all .2s linear;
+    -o-transition:all .2s linear;
+    -moz-transition:all .2s linear;
+    -webkit-transition:all .2s linear;
+}
+
+header nav ul li a:hover,
+header nav ul .selected{
+    color: grey;
 }
 
 nav a {
 	text-decoration: none;
 }
 
-nav li {
+nav:ul {
 	display: inline;
-	list-style-type: none;
 }
 
-#content1,
-#content2,
-#content3,
-#footer {
-	padding: 10rem;
+img {
+	display: block;
+	margin: 0 auto;
 }
 
-#top {
-	background-color: rgb();
-	margin: 0;
-	padding-top: 2em;
-	padding-bottom: 2em;
+section {
+	padding: 10rem 0;
 }
 
-#top a {
-    padding: 5px 25px 7px 25px;
-    -webkit-transition: 1s all ease;
-    -moz-transition: 1s all ease;
-	-o-transition: 1s all ease;
-    transition: 1s all ease;
-    color: #fff;
+.logo {
+	width: 300px;
 }
 
-#top a:hover,
-#top li:hover a{
-	color: black;
+.top-section {
+	background: transparent url("../img/banner.jpg") no-repeat center top;
+	background-size: cover;
 }
 
-#top li.active a {
-    color: #FFF;
-	background-color: black;
+.about-section {
+	background-color: #fff;
+	text-align: center;
 }
 
-#content1 {
-	background-color: rgb();
+.gallery-section {
+	background-color: grey;
 }
 
-
-#content2 {
-	background-color: rgb();
+.contact-section {
+	background-color: #aaa;
+	text-align: center;
 }
 
-
-#content3 {
-	background-color: rgb();
+.nav-bottom {
+	bottom: 0;
+	display: inline;
 }
 
-h2 {
-	color: #fff;
+@media only screen and (min-width: 25em) {
+
 }
 
-@media only screen and (min-width: 38em){
-	ul#top li {
-		display: inline;
-	}
+@media only screen and (min-width: 38em) {
+
+}
+
+@media only screen and (min-width: 60em) {
+
 }
