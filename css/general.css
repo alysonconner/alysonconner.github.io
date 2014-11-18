@@ -89,7 +89,7 @@ img {
 }
 
 .top-section {
-	background: transparent url("../img/banner.jpg") no-repeat center top;
+	background: transparent url("../img/banner2.jpg") no-repeat center top;
 	background-size: cover;
 	padding: 20rem 0;
 }
@@ -98,6 +98,19 @@ img {
 	background-color: #fff;
 }
 
+.about-section h2 {
+	text-align: center;
+	margin-top: 2em;
+}
+
+.about-section ul li {
+	list-style-type: none;
+	padding-left: 0;
+}
+
+.icon {
+	width: 60px;
+}
 
 .gallery-section {
 	background-color: grey;
