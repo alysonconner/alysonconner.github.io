@@ -51,7 +51,7 @@ nav li {
 }
 
 #top {
-	background-color: rgb(217,72,72);
+	background-color: rgb();
 	margin: 0;
 	padding-top: 2em;
 	padding-bottom: 2em;
@@ -77,17 +77,17 @@ nav li {
 }
 
 #content1 {
-	background-color: rgb(137,166,129);
+	background-color: rgb();
 }
 
 
 #content2 {
-	background-color: rgb(187,184,143);
+	background-color: rgb();
 }
 
 
 #content3 {
-	background-color: rgb(217,100,89);
+	background-color: rgb();
 }
 
 h2 {
