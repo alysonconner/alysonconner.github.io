@@ -35,8 +35,8 @@ header{
 }
 
 header .logo{
-    margin-top: 30px;
     float: left;
+    width: 90px;
 }
 
 header nav{
@@ -85,7 +85,7 @@ section {
 	padding: 10rem 0;
 }
 
-.logo {
+.logo-banner {
 	width: 300px;
 }
 
