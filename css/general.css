@@ -84,10 +84,6 @@ img {
 	margin: 0 auto;
 }
 
-section {
-	padding: 10rem 0;
-}
-
 .logo-banner {
 	width: 300px;
 }
@@ -95,21 +91,55 @@ section {
 .top-section {
 	background: transparent url("../img/banner.jpg") no-repeat center top;
 	background-size: cover;
-	padding: 20rem;
+	padding: 20rem 0;
 }
 
 .about-section {
 	background-color: #fff;
-	text-align: center;
 }
+
 
 .gallery-section {
 	background-color: grey;
+	padding: 10rem 0;
 }
 
 .contact-section {
 	background-color: #aaa;
 	text-align: center;
+	padding: 10rem 0;
+}
+
+
+/**  contact  **/
+.contact{
+    padding: 140px 0;
+    overflow: hidden;
+    text-align: center;
+}
+
+.contact .title{
+    margin-top: 40px;
+}
+
+.contact hr{
+    display: block;
+    border: 0;
+    width: 100px;
+    height: 1px;
+    background: #797979;
+    margin: 60px auto;
+}
+
+.contact .email,
+.contact .phone{
+    color: grey;
+    font-size: 20px;
+    letter-spacing: 2px;
+}
+
+.contact .email{
+    margin-bottom: 40px;
 }
 
 .nav-bottom {
