@@ -99,7 +99,7 @@ img {
 }
 
 .about-section h2 {
-	text-align: center;
+	text-align: left;
 	margin-top: 2em;
 }
 
@@ -110,6 +110,7 @@ img {
 
 .icon {
 	width: 60px;
+    float: center;
 }
 
 .gallery-section {
@@ -133,6 +134,7 @@ img {
 
 .contact .title{
     margin-top: 40px;
+    text-align: center;
 }
 
 .contact hr{
