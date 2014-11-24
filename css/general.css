@@ -337,10 +337,16 @@ footer .social ul li a:hover{
 
 .error {
     text-align: center;
+    padding: 10em;
 }
 
 .error h2 {
 
+}
+
+.error footer {
+    position: bottom;
+    bottom: 0;
 }
 
 @media only screen and (max-width:480px) {
