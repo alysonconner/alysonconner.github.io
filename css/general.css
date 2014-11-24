@@ -31,7 +31,7 @@ footer {
 header{
     width: 100%;
     height: 90px;
-    background: rgba(255,255,255,.8);
+    background: rgba(255,255,255,1);
     top:0;
     position: relative;
     position: fixed;
@@ -101,7 +101,7 @@ img {
 .top-section {
 	background: transparent url("../img/banner2.jpg") no-repeat center top;
 	background-size: cover;
-	padding: 20rem 0;
+	padding: 15rem 0 20rem 0;
 }
 
 .info {
@@ -113,17 +113,25 @@ img {
     max-width: 50%;
 }
 
+
 .stuff {
     text-align:center;
 }
 
 .skills {
+    padding: 0;
+    margin: 0;
+}
 
+.skills ul {
 }
 
 .skills li {
-    display: inline-block;
-    padding: 3em;
+    display: block;
+}
+
+.skills h2 {
+    text-align: center;
 }
 
 .about-section {
@@ -144,6 +152,12 @@ img {
 .gallery-section {
 	background-color: rgba(64,64,64,1);
 	padding: 3rem;
+}
+
+.gallery-section h2 {
+    text-align: center;
+    text-transform: uppercase;
+    color: white;
 }
 
 .contact-section {
@@ -323,17 +337,43 @@ footer .social ul li a:hover{
 
 @media only screen and (max-width:480px) {
     /* mobie = 1 tile */
-
+        header nav ul li {
+        margin-left: 1px;
+    }
 }
-@media only screen and (max-width:650px) and (min-width:481px) {
+@media only screen and (min-width:651px){
     /* Tablet = 2 tiles */
+    header nav ul li {
+        margin-left: 0;
+    }
+    .skills {
+        width: 100%;
+        margin-left: auto;
+        margin-right: auto;
+    }
+    .skills ul {
+        text-align: center;
+        margin: 0px;
+        padding: 5em;
+        padding-left: 5em;
+        padding-right: 5em;
+        width: 100%;
+        overflow: hidden;
+    }
 
+    .skills li {
+        float: left;
+        padding: 2em;
+        width: 33.3%;
+        margin-left: auto ;
+        margin-right: auto ;
+    }
 }
-@media only screen and (max-width:1050px) and (min-width:651px) {
+@media only screen and (min-width:1050px){
     /* ipad = 3 tiles */
 
 }
-@media only screen and (max-width:1290px) and (min-width:1051px) {
+@media only screen and (min-width:1290px){
     /* desktop = 4 tiles */
 
 }
