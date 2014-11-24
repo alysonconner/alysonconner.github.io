@@ -30,7 +30,7 @@ body {
 
 
 @media only screen and (max-width:480px) {
-    /* mobie = 1 tile */
+    /* mobile = 1 tile */
     .box {
         width: 100%;
         padding-bottom: 100%;
