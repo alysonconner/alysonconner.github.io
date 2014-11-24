@@ -335,16 +335,13 @@ footer .social ul li a:hover{
     color: #fff;
 }
 
-.404 {
-    text-align: center;
-    margin-left: auto;
-    margin-right: auto;
-}
-
-.404 {
+.error {
     text-align: center;
 }
 
+.error h2 {
+
+}
 
 @media only screen and (max-width:480px) {
     /* mobie = 1 tile */
