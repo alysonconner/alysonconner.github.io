@@ -137,7 +137,7 @@ img {
 }
 
 .info p {
-    max-width: 50%;
+    max-width: 60%;
 }
 
 
@@ -187,7 +187,7 @@ img {
 
 .gallery-section {
 	background-color: rgba(64,64,64,1);
-	padding: 3rem;
+	padding: 100px 10px 30px 10px;
 }
 
 .gallery-section h2 {
@@ -271,7 +271,7 @@ img {
 
 /**  contact  **/
 .contact{
-    padding: 80px 0;
+    padding: 100px 0 30px 0;
     overflow: hidden;
     text-align: center;
 }
@@ -316,19 +316,19 @@ img {
 
 footer{
     width: 100%;
-    padding: 60px 0;
+    padding: 10px 0;
     background: #3e3d3d;
     text-align: center;
 }
 
 footer .copyrights{
-    float: left;
+    float: center;
 }
 
 footer .copyrights p{
     display: inline-block;
     color: #b6b6b6;
-    font-family: "opensans-regular", arial;
+    font-family: "Open Sans", sans-serif;
     font-size: 13px;
     margin-left: 20px;
     letter-spacing: .5px;
@@ -372,27 +372,27 @@ footer nav ul li a:hover {
   -o-transition:all .3s linear;
 }
 
-footer .social{
-    float: right;
+.social{
+    float: center;
 }
 
-footer .social ul{
+.social ul{
     list-style: none;
     overflow: hidden;
 }
 
 
-footer .social ul li{
+.social ul li{
     display: inline-block;
     margin-right: 25px;
     letter-spacing: .5px;
 }
 
-footer .social ul li:last-child{
+.social ul li:last-child{
     margin-right: 20px;
 }
 
-footer .social ul li a{
+.social ul li a{
     color: #b5b5b5;
     font-size: 14px;
     text-decoration: none;
@@ -403,7 +403,7 @@ footer .social ul li a{
     -o-transition:all .2s linear;
 }
 
-footer .social ul li a:hover{
+.social ul li a:hover{
     color: #fff;
 }
 
@@ -582,5 +582,8 @@ footer .social ul li a:hover{
 }
 @media only screen and (min-width:1291px){
     /* desktop = 4 tiles */
-
+        .top-section {
+    padding: 18em 0 16em 0;
+    }
+}
 }
