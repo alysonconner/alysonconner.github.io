@@ -232,7 +232,7 @@ img {
 
 .lightbox:target {
     outline: none;
-
+    text-decoration: none;
     display: -ms-flexbox;
     display: -webkit-flex;
     display: flex;
@@ -253,10 +253,6 @@ img {
     -webkit-align-items: center;
     -ms-flex-align: center;
     align-items: center;
-}
-
-.lightbox a {
-    text-decoration: none;
 }
 
 .lightbox-image {
