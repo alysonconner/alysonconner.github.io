@@ -302,7 +302,7 @@ img {
 }
 
 .contact-icon {
-    width: 150px;
+    width: 100px;
 }
 .nav-bottom {
 	bottom: 0;
@@ -436,14 +436,58 @@ footer .social ul li a:hover{
     .about-section h2 {
         font-size: 1em;
     }
+
+    .lightbox:target {
+    display: -webkit-box;
+    display: -moz-box;
+    display: -ms-flexbox;
+    display: -webkit-flex;
+    display: flex;
+    -webkit-box-direction: normal;
+    -moz-box-direction: normal;
+    -webkit-box-orient: vertical;
+    -moz-box-orient: vertical;
+    -webkit-flex-direction: column;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    -webkit-flex-wrap: nowrap;
+    -ms-flex-wrap: nowrap;
+    flex-wrap: nowrap;
+    -webkit-box-pack: center;
+    -moz-box-pack: center;
+    -webkit-justify-content: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+    -webkit-align-content: center;
+    -ms-flex-line-pack: center;
+    align-content: center;
+    -webkit-box-align: center;
+    -moz-box-align: center;
+    -webkit-align-items: center;
+    -ms-flex-align: center;
+    align-items: center;
+    }
+
+    .lightbox-image {
+        width: 90%;
+        padding: 1em;
+    }
+
+    .lightbox-text {
+        color: #fff;
+        padding: 1em;
+        margin-top: 8em;
+        width: 90%;
+        overflow: scroll;
+    }
+
+    .lightbox h3 {
+        font-size: 1.25em;
+    }
+
 }
 
-@media only screen and (min-width: 481px) and (max-width: 560px){
-    header nav ul li {
-        margin-left: 0;
-    }
-}
-@media only screen and (min-width:561px){
+@media only screen and (max-width:650px) and (min-width:481px) {
     /* Tablet = 2 tiles */
     .top-section {
     padding: 15em 0 12em 0;
@@ -478,15 +522,65 @@ footer .social ul li a:hover{
         margin-left: auto ;
         margin-right: auto ;
     }
+        .lightbox:target {
+    display: -webkit-box;
+    display: -moz-box;
+    display: -ms-flexbox;
+    display: -webkit-flex;
+    display: flex;
+    -webkit-box-direction: normal;
+    -moz-box-direction: normal;
+    -webkit-box-orient: vertical;
+    -moz-box-orient: vertical;
+    -webkit-flex-direction: column;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    -webkit-flex-wrap: nowrap;
+    -ms-flex-wrap: nowrap;
+    flex-wrap: nowrap;
+    -webkit-box-pack: center;
+    -moz-box-pack: center;
+    -webkit-justify-content: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+    -webkit-align-content: center;
+    -ms-flex-line-pack: center;
+    align-content: center;
+    -webkit-box-align: center;
+    -moz-box-align: center;
+    -webkit-align-items: center;
+    -ms-flex-align: center;
+    align-items: center;
+    }
+
+    .lightbox-image {
+        width: 70%;
+        padding: 1em;
+    }
+
+    .lightbox-text {
+        color: #fff;
+        padding: 1em;
+        margin-top: 10em;
+        width: 70%;
+        overflow: scroll;
+    }
+    .lightbox h3 {
+        font-size: 1.25em;
+    }
+}
+
+@media only screen and (max-width:1050px) and (min-width:651px) {
 
 }
-@media only screen and (min-width:1050px) and (max-width: 1289px){
+
+@media only screen and (max-width:1290px) and (min-width:1051px) {
     /* ipad = 3 tiles */
     .top-section {
     padding: 15em 0 15em 0;
     }
 }
-@media only screen and (min-width:1290px){
+@media only screen and (min-width:1291px){
     /* desktop = 4 tiles */
 
 }
