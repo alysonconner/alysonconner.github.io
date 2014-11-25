@@ -134,6 +134,7 @@ img {
 .info {
     background-color: rgba(64,64,64,1);
     color: white;
+    padding: 150px 40px 100px 40px;
 }
 
 .info p {
@@ -165,6 +166,7 @@ img {
 .about-section {
 	background-color: #fff;
     text-align: center;
+    border: 150px 0 100px 0;
 }
 
 .about-section h2 {
@@ -187,7 +189,7 @@ img {
 
 .gallery-section {
 	background-color: rgba(64,64,64,1);
-	padding: 100px 10px 30px 10px;
+	padding: 150px 10px 30px 10px;
 }
 
 .gallery-section h2 {
@@ -295,6 +297,11 @@ img {
     color: grey;
     font-size: 20px;
     letter-spacing: 2px;
+}
+
+.phone a {
+    text-decoration: none;
+    color: grey;
 }
 
 .contact .email{
@@ -501,27 +508,6 @@ footer nav ul li a:hover {
     .about-section h2 {
         font-size: 1.5em;
     }
-    .skills {
-        width: 100%;
-        margin-left: auto;
-        margin-right: auto;
-    }
-    .skills ul {
-        text-align: center;
-        margin: 0px;
-        padding: 5em;
-        padding-left: 5em;
-        padding-right: 5em;
-        width: 100%;
-        overflow: hidden;
-    }
-    .skills li {
-        float: left;
-        padding: 2em;
-        width: 33.3%;
-        margin-left: auto ;
-        margin-right: auto ;
-    }
         .lightbox:target {
     display: -webkit-box;
     display: -moz-box;
@@ -572,6 +558,25 @@ footer nav ul li a:hover {
 
 @media only screen and (max-width:1050px) and (min-width:651px) {
 
+        .skills {
+        width: 100%;
+        margin-left: auto;
+        margin-right: auto;
+    }
+    .skills ul {
+        text-align: center;
+        margin: 0px;
+        padding: 5em;
+        width: 100%;
+        overflow: hidden;
+    }
+    .skills li {
+        float: left;
+        padding: 2em;
+        width: 33.3%;
+        margin-left: auto ;
+        margin-right: auto ;
+    }
 }
 
 @media only screen and (max-width:1290px) and (min-width:1051px) {
@@ -579,11 +584,48 @@ footer nav ul li a:hover {
     .top-section {
     padding: 15em 0 15em 0;
     }
+        .skills {
+        width: 100%;
+        margin-left: auto;
+        margin-right: auto;
+    }
+    .skills ul {
+        text-align: center;
+        margin: 0px;
+        padding: 5em;
+        width: 100%;
+        overflow: hidden;
+    }
+    .skills li {
+        float: left;
+        padding: 2em;
+        width: 33.3%;
+        margin-left: auto ;
+        margin-right: auto ;
+    }
 }
 @media only screen and (min-width:1291px){
     /* desktop = 4 tiles */
         .top-section {
     padding: 18em 0 16em 0;
     }
-}
+        .skills {
+        width: 100%;
+        margin-left: auto;
+        margin-right: auto;
+    }
+    .skills ul {
+        text-align: center;
+        margin: 0px;
+        padding: 5em;
+        width: 100%;
+        overflow: hidden;
+    }
+    .skills li {
+        float: left;
+        padding: 2em;
+        width: 33.3%;
+        margin-left: auto ;
+        margin-right: auto ;
+    }
 }
