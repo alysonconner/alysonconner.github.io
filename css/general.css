@@ -23,10 +23,6 @@ header {
     z-index: +1;
 }
 
-footer {
-	text-align: center;
-}
-
 /*  header  */
 header{
     width: 100%;
@@ -45,6 +41,10 @@ header .logo{
 header nav{
     float: right;
     margin-top: 30px;
+}
+
+nav a {
+    text-decoration: none;
 }
 
 header nav ul li{
@@ -68,12 +68,18 @@ header nav ul li a{
 }
 
 header nav ul li a:hover,
-header nav ul .selected{
+header nav ul li a.selected {
     color: grey;
 }
 
-nav a {
-	text-decoration: none;
+header nav ul li a:active {
+    background-color: yellow;
+}
+
+
+header nav a:hover,
+header nav li.active a {
+    background-color: yellow;
 }
 
 nav:ul {
@@ -90,18 +96,41 @@ img {
     text-align: center;
 }
 
-.banner h2 {
+.banner h1 {
     font-size: 3em;
 }
 
-.banner h3 {
+.banner h2 {
     font-size: 1em;
 }
 
 .top-section {
 	background: transparent url("../img/banner2.jpg") no-repeat center top;
 	background-size: cover;
-	padding: 15rem 0 20rem 0;
+	padding: 10em 0 10em 0;
+}
+
+.top-section h1 {
+    font-size: 2.5em;
+}
+
+.top-section h2 {
+    font-size: 1em;
+}
+
+.about-section h2 {
+    font-size: 1em;
+}
+
+
+
+.top-section hr {
+    display: block;
+    border: 0;
+    width: 150px;
+    height: 3px;
+    background: white;
+    margin: 20px auto;
 }
 
 .info {
@@ -136,13 +165,21 @@ img {
 
 .about-section {
 	background-color: #fff;
+    text-align: center;
 }
 
 .about-section h2 {
 	text-align: center;
 }
 
-
+.about-section hr {
+    display: block;
+    border: 0;
+    width: 150px;
+    height: 3px;
+    background: #797979;
+    margin: 60px auto;
+}
 
 .icon {
 	width: 60px;
@@ -158,6 +195,15 @@ img {
     text-align: center;
     text-transform: uppercase;
     color: white;
+}
+
+.gallery-section hr {
+    display: block;
+    border: 0;
+    width: 150px;
+    height: 3px;
+    background: #797979;
+    margin: 60px auto;
 }
 
 .contact-section {
@@ -247,6 +293,7 @@ footer{
     width: 100%;
     padding: 60px 0;
     background: #3e3d3d;
+    text-align: center;
 }
 
 footer .copyrights{
@@ -349,16 +396,38 @@ footer .social ul li a:hover{
     bottom: 0;
 }
 
-@media only screen and (max-width:480px) {
+@media only screen and (max-width: 480px) {
     /* mobie = 1 tile */
-        header nav ul li {
-        margin-left: 1px;
-    }
-}
-@media only screen and (min-width:651px){
-    /* Tablet = 2 tiles */
     header nav ul li {
         margin-left: 0;
+        margin-right: 10px;
+    }
+    .top-section h1 {
+        font-size: 2.5em;
+    }
+    .top-section h2 {
+        font-size: 1em;
+    }
+    .about-section h2 {
+        font-size: 1em;
+    }
+}
+
+@media only screen and (min-width: 481px) and (max-width: 560px){
+    header nav ul li {
+        margin-left: 0;
+    }
+}
+@media only screen and (min-width:561px){
+    /* Tablet = 2 tiles */
+    .top-section h1 {
+        font-size: 3em;
+    }
+    .top-section h2 {
+        font-size: 1.5em;
+    }
+    .about-section h2 {
+        font-size: 1.5em;
     }
     .skills {
         width: 100%;
@@ -374,7 +443,6 @@ footer .social ul li a:hover{
         width: 100%;
         overflow: hidden;
     }
-
     .skills li {
         float: left;
         padding: 2em;
@@ -382,8 +450,9 @@ footer .social ul li a:hover{
         margin-left: auto ;
         margin-right: auto ;
     }
+
 }
-@media only screen and (min-width:1050px){
+@media only screen and (min-width:1050px) and (max-width: 1289px){
     /* ipad = 3 tiles */
 
 }
