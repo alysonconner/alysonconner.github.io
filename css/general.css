@@ -79,7 +79,7 @@ header nav ul li a:active {
 
 header nav a:hover,
 header nav li.active a {
-    background-color: yellow;
+    color: goldenrod;
 }
 
 nav:ul {
@@ -287,7 +287,7 @@ img {
     display: block;
     border: 0;
     width: 100px;
-    height: 1px;
+    height: 4px;
     background: #797979;
     margin: 60px auto;
 }
@@ -299,13 +299,14 @@ img {
     letter-spacing: 2px;
 }
 
-.phone a {
-    text-decoration: none;
-    color: grey;
-}
-
 .contact .email{
     margin-bottom: 40px;
+}
+
+.phone a,
+.email a {
+    text-decoration: none;
+    color: grey;
 }
 
 .contact-icon {
@@ -318,7 +319,7 @@ img {
 
 /**  footer  **/
 .logo-footer {
-	width: 30px;
+	width: 40px;
 }
 
 footer{
@@ -333,18 +334,13 @@ footer .copyrights{
 }
 
 footer .copyrights p{
-    display: inline-block;
     color: #b6b6b6;
-    font-family: "Open Sans", sans-serif;
     font-size: 13px;
-    margin-left: 20px;
-    letter-spacing: .5px;
+    letter-spacing: .75px;
 }
 
 footer .copyrights a{
     color: #d7d7d7;
-    font-family: "opensans-semibold", arial;
-    font-weight: bold;
     text-decoration: none;
 
     transition:all .2s linear;
@@ -354,7 +350,7 @@ footer .copyrights a{
 }
 
 footer .copyrights a:hover{
-    color: #ffffff;
+    color: goldenrod;
 }
 
 footer nav ul{
@@ -506,37 +502,37 @@ footer nav ul li a:hover {
         font-size: 1.5em;
     }
     .about-section h2 {
-        font-size: 1.5em;
+        font-size: 1.5;
     }
-        .lightbox:target {
-    display: -webkit-box;
-    display: -moz-box;
-    display: -ms-flexbox;
-    display: -webkit-flex;
-    display: flex;
-    -webkit-box-direction: normal;
-    -moz-box-direction: normal;
-    -webkit-box-orient: vertical;
-    -moz-box-orient: vertical;
-    -webkit-flex-direction: column;
-    -ms-flex-direction: column;
-    flex-direction: column;
-    -webkit-flex-wrap: nowrap;
-    -ms-flex-wrap: nowrap;
-    flex-wrap: nowrap;
-    -webkit-box-pack: center;
-    -moz-box-pack: center;
-    -webkit-justify-content: center;
-    -ms-flex-pack: center;
-    justify-content: center;
-    -webkit-align-content: center;
-    -ms-flex-line-pack: center;
-    align-content: center;
-    -webkit-box-align: center;
-    -moz-box-align: center;
-    -webkit-align-items: center;
-    -ms-flex-align: center;
-    align-items: center;
+    .lightbox:target {
+        display: -webkit-box;
+        display: -moz-box;
+        display: -ms-flexbox;
+        display: -webkit-flex;
+        display: flex;
+        -webkit-box-direction: normal;
+        -moz-box-direction: normal;
+        -webkit-box-orient: vertical;
+        -moz-box-orient: vertical;
+        -webkit-flex-direction: column;
+        -ms-flex-direction: column;
+        flex-direction: column;
+        -webkit-flex-wrap: nowrap;
+        -ms-flex-wrap: nowrap;
+        flex-wrap: nowrap;
+        -webkit-box-pack: center;
+        -moz-box-pack: center;
+        -webkit-justify-content: center;
+        -ms-flex-pack: center;
+        justify-content: center;
+        -webkit-align-content: center;
+        -ms-flex-line-pack: center;
+        align-content: center;
+        -webkit-box-align: center;
+        -moz-box-align: center;
+        -webkit-align-items: center;
+        -ms-flex-align: center;
+        align-items: center;
     }
 
     .lightbox-image {
@@ -557,8 +553,10 @@ footer nav ul li a:hover {
 }
 
 @media only screen and (max-width:1050px) and (min-width:651px) {
-
-        .skills {
+    .about-section h2 {
+        font-size: 1.75em;
+    }
+    .skills {
         width: 100%;
         margin-left: auto;
         margin-right: auto;
@@ -577,10 +575,16 @@ footer nav ul li a:hover {
         margin-left: auto ;
         margin-right: auto ;
     }
+    .about-section h2 {
+        font-size: 2em;
+    }
 }
 
 @media only screen and (max-width:1290px) and (min-width:1051px) {
     /* ipad = 3 tiles */
+    .about-section h2 {
+        font-size: 1.75em;
+    }
     .top-section {
     padding: 15em 0 15em 0;
     }
@@ -606,8 +610,11 @@ footer nav ul li a:hover {
 }
 @media only screen and (min-width:1291px){
     /* desktop = 4 tiles */
-        .top-section {
-    padding: 18em 0 16em 0;
+    .about-section h2 {
+        font-size: 2em;
+    }
+    .top-section {
+        padding: 18em 0 16em 0;
     }
         .skills {
         width: 100%;
