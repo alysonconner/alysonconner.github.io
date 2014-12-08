@@ -31,15 +31,16 @@ header {
     top:0;
     position: relative;
     position: fixed;
-
     display: none;
+
+    transition: all 1000ms linear,
 }
 
 .transition {
-  -webkit-transition: all 1s ease-in-out;
-    -moz-transition: all 1s ease-in-out;
-    -o-transition: all 1s ease-in-out;
-    transition: all 1s ease-in-out;
+    transition:all .2s linear;
+    -o-transition:all .2s linear;
+    -moz-transition:all .2s linear;
+    -webkit-transition:all .2s linear;
 }
 
 .show {
@@ -58,6 +59,7 @@ header nav{
 
 nav a {
     text-decoration: none;
+    text-transform: uppercase;
 }
 
 header nav ul li{
@@ -82,17 +84,16 @@ header nav ul li a{
 
 header nav ul li a:hover,
 header nav ul li a.selected {
-    color: grey;
+    color: rgba(0,126,154,1);
 }
 
-header nav ul li a:active {
-    background-color: yellow;
+header nav a li a.selected {
+    text-transform: uppercase;
 }
-
 
 header nav a:hover,
 header nav li.active a {
-    color: goldenrod;
+    color: rgba(0,126,154,1);
 }
 
 nav:ul {
@@ -107,6 +108,7 @@ img {
 .banner {
     color: white;
     text-align: center;
+    visibility: none;
 }
 
 .banner h1 {
@@ -120,15 +122,13 @@ img {
 .top-section {
 	background: transparent url("../img/banner2.jpg") no-repeat center top;
 	background-size: cover;
-	padding: 10em 0 10em 0;
-
+	padding: 8em 0 8em 0;
 }
 
 .top-section img {
-    -webkit-filter: blur(1px);
-    -moz-filter: blur(1px);
-    -o-filter: blur(1px); -ms-filter: blur(1px);
-    filter: blur(1px);
+    padding-top: 80px;
+    width: 80px;
+
 }
 
 .top-section h1 {
@@ -153,9 +153,9 @@ img {
 }
 
 .info {
-    background-color: rgba(64,64,64,1);
+    background-color: rgba(0,126,154,1);
     color: white;
-    padding: 150px 40px 100px 40px;
+    padding: 80px 200px 80px 200px;
 }
 
 .info p {
@@ -170,9 +170,11 @@ img {
 .skills {
     padding: 0;
     margin: 0;
+    background-color: rgba(56,56,56,1);
 }
 
 .skills ul {
+
 }
 
 .skills li {
@@ -182,6 +184,7 @@ img {
 .skills h2,
 .skills p {
     text-align: center;
+    color: white;
 }
 
 .about-section {
@@ -199,7 +202,7 @@ img {
     border: 0;
     width: 150px;
     height: 3px;
-    background: #797979;
+    background: rgba(255,255,255,.5);
     margin: 60px auto;
 }
 
@@ -210,7 +213,7 @@ img {
 
 .gallery-section {
 	background-color: rgba(64,64,64,1);
-	padding: 150px 10px 30px 10px;
+	padding: 80px 10px 30px 10px;
 }
 
 .gallery-section h2 {
@@ -371,7 +374,7 @@ footer .copyrights a{
 }
 
 footer .copyrights a:hover{
-    color: goldenrod;
+    color: rgba(255,216,1,1);
 }
 
 footer nav ul{
@@ -447,6 +450,10 @@ footer nav ul li a:hover {
 
 @media only screen and (max-width: 480px) {
     /* mobie = 1 tile */
+    .info {
+    padding-left: 30px;
+    padding-right: 30px;
+    }
     header nav ul li {
         margin-left: 0;
         margin-right: 10px;
@@ -513,6 +520,10 @@ footer nav ul li a:hover {
 
 @media only screen and (max-width:650px) and (min-width:481px) {
     /* Tablet = 2 tiles */
+    .info {
+    padding-left: 50px;
+    padding-right: 50px;
+    }
     .top-section {
     padding: 15em 0 12em 0;
     }
@@ -603,6 +614,10 @@ footer nav ul li a:hover {
 
 @media only screen and (max-width:1290px) and (min-width:1051px) {
     /* ipad = 3 tiles */
+    .info {
+    padding-left: 100px;
+    padding-right: 100px;
+    }
     .about-section h2 {
         font-size: 1.75em;
     }
