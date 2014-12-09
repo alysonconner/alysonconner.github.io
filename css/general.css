@@ -32,7 +32,10 @@ header {
     position: relative;
     position: fixed;
 
-    transition: all 1000ms linear,
+    transition: all 1s linear;
+    -o-transition:all 1s linear;
+    -moz-transition:all 1s linear;
+    -webkit-transition:all 1s linear;
 }
 
 .transition {
@@ -43,9 +46,11 @@ header {
 }
 
 .show {
-    background: rgba(255,255,255,.5);
-    height: 80px;
-
+    background: rgba(255,255,255,.8);
+    transition:all .2s linear;
+    -o-transition:all .2s linear;
+    -moz-transition:all .2s linear;
+    -webkit-transition:all .2s linear;
 }
 
 header .logo{
@@ -140,10 +145,6 @@ img {
     font-size: 1em;
 }
 
-.about-section h2 {
-    font-size: 1em;
-}
-
 .top-section hr {
     display: block;
     border: 0;
@@ -182,12 +183,9 @@ img {
     display: block;
 }
 
-.skills h2 {
-    text-transform: uppercase;
-}
-
 .skills h2,
-.skills p {
+.skills p,
+.skills h3 {
     text-align: center;
     color: white;
 }
@@ -217,14 +215,14 @@ img {
 }
 
 .gallery-section {
-	background-color: rgba(64,64,64,1);
+	background-color: rgba(255,255,255,1);
 	padding: 80px 10px 30px 10px;
 }
 
 .gallery-section h2 {
     text-align: center;
     text-transform: uppercase;
-    color: white;
+    color: rgba(56,56,56,1);
 }
 
 .gallery-section hr {
@@ -307,6 +305,7 @@ img {
     text-align: center;
 }
 
+
 .contact .title{
     margin-top: 20px;
     text-align: center;
@@ -341,9 +340,11 @@ img {
 .contact-icon {
     width: 100px;
 }
+
 .nav-bottom {
 	bottom: 0;
 	display: inline;
+    font-size: 10px;
 }
 
 /**  footer  **/
@@ -379,7 +380,7 @@ footer .copyrights a{
 }
 
 footer .copyrights a:hover{
-    color: rgba(255,216,1,1);
+    color: rgba(255,255,255,1);
 }
 
 footer nav ul{
@@ -441,11 +442,12 @@ footer nav ul li a:hover {
 
 .error {
     text-align: center;
-    padding: 10em;
+    padding: 15em 10em 15em 10em;
+    text-align: center;
 }
 
 .error h2 {
-
+    color: rgba(2,126,154,1);
 }
 
 .error footer {
@@ -467,9 +469,6 @@ footer nav ul li a:hover {
         font-size: 2.5em;
     }
     .top-section h2 {
-        font-size: 1em;
-    }
-    .about-section h2 {
         font-size: 1em;
     }
 
@@ -538,9 +537,6 @@ footer nav ul li a:hover {
     .top-section h2 {
         font-size: 1.5em;
     }
-    .about-section h2 {
-        font-size: 1.5;
-    }
     .lightbox:target {
         display: -webkit-box;
         display: -moz-box;
@@ -590,9 +586,6 @@ footer nav ul li a:hover {
 }
 
 @media only screen and (max-width:1050px) and (min-width:651px) {
-    .about-section h2 {
-        font-size: 1.75em;
-    }
     .skills {
         width: 100%;
         margin-left: auto;
@@ -601,7 +594,6 @@ footer nav ul li a:hover {
     .skills ul {
         text-align: center;
         margin: 0px;
-        padding: 5em;
         width: 100%;
         overflow: hidden;
     }
@@ -612,9 +604,6 @@ footer nav ul li a:hover {
         margin-left: auto ;
         margin-right: auto ;
     }
-    .about-section h2 {
-        font-size: 2em;
-    }
 }
 
 @media only screen and (max-width:1290px) and (min-width:1051px) {
@@ -622,9 +611,6 @@ footer nav ul li a:hover {
     .info {
     padding-left: 100px;
     padding-right: 100px;
-    }
-    .about-section h2 {
-        font-size: 1.75em;
     }
     .top-section {
     padding: 15em 0 15em 0;
@@ -637,7 +623,6 @@ footer nav ul li a:hover {
     .skills ul {
         text-align: center;
         margin: 0px;
-        padding: 5em;
         width: 100%;
         overflow: hidden;
     }
@@ -651,9 +636,6 @@ footer nav ul li a:hover {
 }
 @media only screen and (min-width:1291px){
     /* desktop = 4 tiles */
-    .about-section h2 {
-        font-size: 2em;
-    }
     .top-section {
         padding: 18em 0 16em 0;
     }
@@ -665,7 +647,6 @@ footer nav ul li a:hover {
     .skills ul {
         text-align: center;
         margin: 0px;
-        padding: 5em;
         width: 100%;
         overflow: hidden;
     }
