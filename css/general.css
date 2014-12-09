@@ -38,13 +38,6 @@ header {
     -webkit-transition:all 1s linear;
 }
 
-.transition {
-    transition:all .2s linear;
-    -o-transition:all .2s linear;
-    -moz-transition:all .2s linear;
-    -webkit-transition:all .2s linear;
-}
-
 .show {
     background: rgba(255,255,255,.8);
     transition:all .2s linear;
@@ -176,7 +169,7 @@ img {
 }
 
 .skills ul {
-
+    padding-bottom: 30px;
 }
 
 .skills li {
@@ -340,10 +333,10 @@ img {
 .email a:hover {
     color: rgba(0,126,154,1);
 
-    transition:all 1s linear;
-    -o-transition:all 1s linear;
-    -moz-transition:all 1s linear;
-    -webkit-transition:all 1s linear;
+    transition:all .3s linear;
+    -o-transition:all .3s linear;
+    -moz-transition:all .3s linear;
+    -webkit-transition:all .3s linear;
 
 }
 
@@ -377,7 +370,7 @@ footer .copyrights{
 
 footer .copyrights p{
     color: #b6b6b6;
-    font-size: 13px;
+    font-size: 11px;
     letter-spacing: .75px;
 }
 
@@ -469,13 +462,13 @@ footer nav ul li a:hover {
 
 @media only screen and (max-width: 480px) {
     /* mobie = 1 tile */
+    header nav ul li {
+    margin-left: 0;
+    margin-right: 10px;
+    }
     .info {
     padding-left: 30px;
     padding-right: 30px;
-    }
-    header nav ul li {
-        margin-left: 0;
-        margin-right: 10px;
     }
     .top-section h1 {
         font-size: 2.5em;
@@ -536,6 +529,10 @@ footer nav ul li a:hover {
 
 @media only screen and (max-width:650px) and (min-width:481px) {
     /* Tablet = 2 tiles */
+    header nav ul li {
+    margin-left: 0;
+    margin-right: 20px;
+    }
     .info {
     padding-left: 50px;
     padding-right: 50px;
@@ -598,6 +595,7 @@ footer nav ul li a:hover {
 }
 
 @media only screen and (max-width:1050px) and (min-width:651px) {
+
     .skills {
         width: 100%;
         margin-left: auto;

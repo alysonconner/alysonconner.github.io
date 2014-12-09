@@ -16,11 +16,17 @@ body {
 }
 
 .boxinside {
-    padding: 10px;
+    margin: 10px;
+    background: rgba(0,126,154,1)
 }
 
-.boxinside img { width: 100% }
+.boxinside img {
+    width: 100%;
+}
 
+.hover img:hover {
+    opacity:0.5;
+}
 
 @media only screen and (max-width:480px) {
     /* mobile = 1 tile */
