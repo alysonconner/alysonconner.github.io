@@ -337,6 +337,16 @@ img {
     color: grey;
 }
 
+.email a:hover {
+    color: rgba(0,126,154,1);
+
+    transition:all 1s linear;
+    -o-transition:all 1s linear;
+    -moz-transition:all 1s linear;
+    -webkit-transition:all 1s linear;
+
+}
+
 .contact-icon {
     width: 100px;
 }
@@ -346,6 +356,8 @@ img {
 	display: inline;
     font-size: 10px;
 }
+
+
 
 /**  footer  **/
 .logo-footer {
@@ -380,7 +392,7 @@ footer .copyrights a{
 }
 
 footer .copyrights a:hover{
-    color: rgba(255,255,255,1);
+    color: rgba(0,126,154,1);
 }
 
 footer nav ul{
@@ -407,13 +419,13 @@ footer nav ul li a:hover {
 
 .social{
     float: center;
+    padding-right: 40px;
 }
 
 .social ul{
     list-style: none;
     overflow: hidden;
 }
-
 
 .social ul li{
     display: inline-block;
@@ -437,7 +449,7 @@ footer nav ul li a:hover {
 }
 
 .social ul li a:hover{
-    color: #fff;
+    color: rgba(0,126,154,1);
 }
 
 .error {
