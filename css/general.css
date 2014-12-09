@@ -95,7 +95,7 @@ header nav li.active a {
     color: rgba(0,126,154,1);
 }
 
-nav:ul {
+nav ul {
 	display: inline;
 }
 
@@ -107,7 +107,6 @@ img {
 .banner {
     color: white;
     text-align: center;
-    visibility: none;
 }
 
 .banner h1 {
@@ -447,7 +446,7 @@ footer nav ul li a:hover {
 
 .error {
     text-align: center;
-    padding: 15em 10em 15em 10em;
+    padding: 5em 10em 5em 10em;
     text-align: center;
 }
 
@@ -458,6 +457,19 @@ footer nav ul li a:hover {
 .error footer {
     position: bottom;
     bottom: 0;
+}
+
+.error img {
+    width: 500px;
+}
+
+.error a {
+    text-decoration: none;
+    color: rgba(56,56,56,1);
+}
+
+.error a:hover {
+    color: rgba(0,125,154,1);
 }
 
 @media only screen and (max-width: 480px) {
