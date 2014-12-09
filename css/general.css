@@ -203,7 +203,6 @@ img {
 
 .icon {
 	width: 200px;
-    float: center;
 }
 
 .gallery-section {
@@ -363,10 +362,6 @@ footer{
     text-align: center;
 }
 
-footer .copyrights{
-    float: center;
-}
-
 footer .copyrights p{
     color: #b6b6b6;
     font-size: 11px;
@@ -389,7 +384,6 @@ footer .copyrights a:hover{
 
 footer nav ul{
 	list-style-type: none;
-	float: center;
 }
 
 footer nav ul li {
@@ -410,7 +404,6 @@ footer nav ul li a:hover {
 }
 
 .social{
-    float: center;
     padding-right: 40px;
 }
 
