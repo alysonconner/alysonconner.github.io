@@ -440,7 +440,6 @@ footer nav ul li a:hover {
 .error {
     text-align: center;
     padding: 5em 10em 5em 10em;
-    text-align: center;
 }
 
 .error h2 {
@@ -529,6 +528,15 @@ footer nav ul li a:hover {
         font-size: 1.25em;
     }
 
+}
+
+@media only screen and (max-width:830px) {
+    .error {
+    padding: 5em;
+    }
+    .error img {
+        width: 300px;
+    }
 }
 
 @media only screen and (max-width:650px) and (min-width:481px) {
