@@ -48,7 +48,9 @@ header {
 
 header .logo{
     float: left;
-    width: 90px;
+    padding-left: 30px;
+    padding-top: 10px;
+    width: 170px;
 }
 
 header nav{
