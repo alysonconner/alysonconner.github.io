@@ -3,10 +3,12 @@ $(window).scroll(function() {
 	if ($(window).scrollTop() > 100 ){
 
  		$('.header').addClass('show');
+ 		$('.logo').addClass('showlogo');
 
   } else {
 
     $('.header').removeClass('show');
+    $('.logo').removeClass('showlogo');
 
  	};
 });
