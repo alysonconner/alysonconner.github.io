@@ -161,7 +161,9 @@ img {
     margin: 20px auto;
 }
 
-
+.down img {
+    width: 70px;
+}
 
 .info {
     background-color: rgba(56,56,56,1);
