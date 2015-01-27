@@ -162,7 +162,8 @@ img {
 }
 
 .down img {
-    width: 70px;
+    width: 60px;
+    padding-top: 40px;
 }
 
 .info {
@@ -497,6 +498,11 @@ footer nav ul li a:hover {
     }
     .top-section h2 {
         font-size: 1em;
+    }
+
+    .down img {
+    width: 30px;
+    padding-top: 20px;
     }
 
     .lightbox:target {
