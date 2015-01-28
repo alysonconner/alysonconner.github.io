@@ -167,7 +167,8 @@ img {
 }
 
 #about h2,
-#about small{
+#about small,
+#about hr {
     display: none;
 }
 
@@ -206,6 +207,15 @@ img {
 .skills h3 {
     text-align: center;
     color: white;
+}
+
+.skills hr {
+    display: block;
+    border: 0;
+    width: 150px;
+    height: 3px;
+    background: rgba(255,255,255,.5);
+    margin: 60px auto;
 }
 
 .about-section {
