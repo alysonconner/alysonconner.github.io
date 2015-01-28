@@ -113,6 +113,7 @@ header nav li.active a {
 
 nav ul {
 	display: inline;
+
 }
 
 img {
@@ -505,6 +506,14 @@ footer nav ul li a:hover {
     margin-left: 0;
     margin-right: 10px;
     }
+    .nav ul {
+        padding-left: 10px;
+    }
+    .logo{
+    padding-left: 10px;
+    padding-top: 20px;
+    width: 110px;
+    }
     .info {
     padding-left: 30px;
     padding-right: 30px;
@@ -515,9 +524,8 @@ footer nav ul li a:hover {
     .top-section h2 {
         font-size: 1em;
     }
-
     .down img {
-    width: 30px;
+    width: 20px;
     padding-top: 20px;
     }
 
@@ -586,6 +594,9 @@ footer nav ul li a:hover {
     margin-left: 0;
     margin-right: 20px;
     }
+    .nav ul {
+    padding-left: 10px;
+    }
     .info {
     padding-left: 50px;
     padding-right: 50px;
@@ -599,6 +610,12 @@ footer nav ul li a:hover {
     .top-section h2 {
         font-size: 1.5em;
     }
+
+    .down img {
+    width: 20px;
+    padding-top: 15px;
+    }
+
     .lightbox:target {
         display: -webkit-box;
         display: -moz-box;
@@ -648,7 +665,12 @@ footer nav ul li a:hover {
 }
 
 @media only screen and (max-width:1050px) and (min-width:651px) {
-
+    .nav ul {
+    padding-left: 10px;
+    }
+    .down img {
+    width: 20px;
+    }
     .skills {
         width: 100%;
         margin-left: auto;
