@@ -31,6 +31,15 @@ html {
   text-shadow: 0px 20px 60px rgba(0,0,0,0.6);
 }
 
+
+.amp {
+font-family: Baskerville, 'Goudy Old Style', Palatino, 'Book Antiqua', serif;
+font-style: italic;
+font-weight: normal;
+font-size: 1.5em;
+
+}
+
 .banner {
   width: 100%;
   height: 750px;
@@ -298,6 +307,7 @@ img {
     text-align: center;
     text-transform: uppercase;
     font-size: 3em;
+    margin: 0;
     color: rgba(56,56,56,1);
 }
 
@@ -319,6 +329,8 @@ img {
 .contact-blurb {
     padding-left: 3em;
     padding-right: 3em;
+    color: grey;
+    font-weight: 300;
 }
 
 /** START LIGHTBOX **/
@@ -396,25 +408,25 @@ img {
     margin: 60px auto;
 }
 
-.contact .email,
-.contact .phone{
-    color: grey;
-    font-size: 20px;
-    letter-spacing: 2px;
-}
-
-.contact .email{
+.email a {
+    font-size: 1.5em;
+    color: #cc9933;
+    text-decoration: none;
     margin-bottom: 40px;
 }
 
-.phone a,
-.email a {
-    text-decoration: none;
+.contact, .phone{
     color: grey;
+    font-size: 20px;
+}
+
+.phone a{
+    text-decoration: none;
+
 }
 
 .email a:hover {
-    color: #cc9933;
+    color: rgba(56,56,56,1);
 
     transition:all .3s linear;
     -o-transition:all .3s linear;
